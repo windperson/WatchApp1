@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>App1.WatchOS.WatchOSApp</string>
+	<key>CFBundleDisplayName</key>
+	<string>App1.WatchOS.WatchOSApp</string>
+	<key>CFBundleIdentifier</key>
+	<string>tw.idv.windperson.demo.App1.watchkitapp</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>MinimumOSVersion</key>
+	<string>4.2</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>WKWatchKitApp</key>
+	<true/>
+	<key>XSAppIconAssets</key>
+	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>tw.idv.windperson.demo.App1</string>
+</dict>
+</plist>

@@ -3,7 +3,7 @@
 using Foundation;
 using WatchKit;
 
-namespace WatchApp1.WatchOSExtension
+namespace App1.WatchOS.WatchOSExtension
 {
     public class ExtensionDelegate : WKExtensionDelegate
     {

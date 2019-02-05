@@ -7,8 +7,8 @@
     <ProjectGuid>{651BBA40-27EF-4218-B520-819459E6830C}</ProjectGuid>
     <TemplateGuid>{22c3201b-89f4-43a0-a2fc-a31418d6fe44}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>WatchApp1.WatchOSExtension</RootNamespace>
-    <AssemblyName>WatchApp1.WatchOSExtension</AssemblyName>
+    <RootNamespace>App1.WatchOS.WatchOSExtension</RootNamespace>
+    <AssemblyName>App1.WatchOS.WatchOSExtension</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>

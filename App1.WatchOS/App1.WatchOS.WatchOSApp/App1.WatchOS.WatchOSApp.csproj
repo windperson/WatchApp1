@@ -7,8 +7,8 @@
     <ProjectGuid>{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}</ProjectGuid>
     <TemplateGuid>{baaaf399-9f1e-41ac-a256-56b2550b9b13}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>WatchApp1.WatchOSApp</RootNamespace>
-    <AssemblyName>WatchApp1.WatchOSApp</AssemblyName>
+    <RootNamespace>App1.WatchOS.WatchOSApp</RootNamespace>
+    <AssemblyName>App1.WatchOS.WatchOSApp</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
   </PropertyGroup>
@@ -135,8 +135,8 @@
     <InterfaceDefinition Include="Interface.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WatchApp1.WatchOSExtension\WatchApp1.WatchOSExtension.csproj">
-      <Name>WatchApp1.WatchOSExtension</Name>
+    <ProjectReference Include="..\App1.WatchOS.WatchOSExtension\App1.WatchOS.WatchOSExtension.csproj">
+      <Name>App1.WatchOS.WatchOSExtension</Name>
       <Project>{9F743938-8AFB-432F-A974-861B6F14EE7D}</Project>
       <IsAppExtension>True</IsAppExtension>
     </ProjectReference>
