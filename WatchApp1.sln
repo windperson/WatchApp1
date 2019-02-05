@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchApp1.WatchOSApp", "WatchApp1\WatchApp1.WatchOSApp\WatchApp1.WatchOSApp.csproj", "{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WatchApp1.WatchOSExtension", "WatchApp1\WatchApp1.WatchOSExtension\WatchApp1.WatchOSExtension.csproj", "{651BBA40-27EF-4218-B520-819459E6830C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhone.Build.0 = Release|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhone.Deploy.0 = Release|iPhone
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{A0E9284B-B8EE-4A26-A98D-33C26D29CAAD}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhone.Deploy.0 = Debug|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhone.Build.0 = Release|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhone.Deploy.0 = Release|iPhone
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{651BBA40-27EF-4218-B520-819459E6830C}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48A1D9AB-8AAB-4212-B008-8C1A8AAB5F53}
+	EndGlobalSection
+EndGlobal
