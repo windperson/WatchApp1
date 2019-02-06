@@ -17,6 +17,8 @@ namespace App1.WatchOS.WatchOSExtension
             base.Awake(context);
 
             // Configure interface objects here.
+            myValueSlider.SetValue(0);
+
             Console.WriteLine("{0} awake with context", this);
         }
 
@@ -30,6 +32,14 @@ namespace App1.WatchOS.WatchOSExtension
         {
             // This method is called when the watch view controller is no longer visible to the user.
             Console.WriteLine("{0} did deactivate", this);
+        }
+
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Local
+        partial void SliderAction(float value)
+        {
+            Console.WriteLine($"slider value change to:{value}");
+            currentLabel.SetText(value.ToString("0"));
         }
     }
 }

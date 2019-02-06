@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
@@ -11,11 +14,51 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" id="45" text="Main Interface"/>
+                        <label alignment="center" id="45" text="Main Watch Interface" numberOfLines="2" width="103" height="40">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <group width="1" alignment="left" id="102">
+                            <items>
+                                <label alignment="left" id="100" text="Current:">
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                                <label alignment="left" id="103" accessibilityHint="Current Slider Value">
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <accessibilityTraits key="accessibilityTraits" updatesFrequently="YES"/>
+                                    <color key="textColor" colorSpace="calibratedRGB" red="1" green="1" blue="0" alpha="1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="center" id="94" contentMode="center" verticalAlignment="center" radius="5">
+                            <items>
+                                <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="98">
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="sliderAction:" destination="AgC-eL-Hgc" id="153"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                            <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0" blue="1" alpha="1"/>
+                            <variation key="device=watch42" width="2" alignment="center"/>
+                        </group>
                     </items>
+                    <variation key="device=watch38">
+                        <mask key="items">
+                            <include reference="94"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42">
+                        <mask key="items">
+                            <include reference="94"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="currentLabel" destination="103" id="name-outlet-103"/>
+                        <outlet property="myValueSlider" destination="98" id="name-outlet-98"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-38" y="4"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

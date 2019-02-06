@@ -13,8 +13,29 @@ namespace App1.WatchOS.WatchOSExtension
     [Register ("InterfaceController")]
     partial class InterfaceController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        WatchKit.WKInterfaceLabel currentLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        WatchKit.WKInterfaceSlider myValueSlider { get; set; }
+
+        [Action ("sliderAction:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void SliderAction (System.Single value);
+
         void ReleaseDesignerOutlets ()
         {
+            if (currentLabel != null) {
+                currentLabel.Dispose ();
+                currentLabel = null;
+            }
+
+            if (myValueSlider != null) {
+                myValueSlider.Dispose ();
+                myValueSlider = null;
+            }
         }
     }
 }

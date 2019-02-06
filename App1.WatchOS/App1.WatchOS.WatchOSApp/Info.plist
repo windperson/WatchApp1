@@ -5,7 +5,7 @@
 	<key>CFBundleName</key>
 	<string>App1.WatchOS.WatchOSApp</string>
 	<key>CFBundleDisplayName</key>
-	<string>App1.WatchOS.WatchOSApp</string>
+	<string>WatchOSApp Demo</string>
 	<key>CFBundleIdentifier</key>
 	<string>tw.idv.windperson.demo.App1.watchkitapp</string>
 	<key>CFBundleDevelopmentRegion</key>
