@@ -36,10 +36,10 @@ namespace App1.WatchOS.WatchOSExtension
 
         // ReSharper disable once InconsistentNaming
         // ReSharper disable once UnusedMember.Local
-        partial void SliderAction(float value)
+        partial void sliderAction(float sender)
         {
-            Console.WriteLine($"slider value change to:{value}");
-            currentLabel.SetText(value.ToString("0"));
+            Console.WriteLine($"slider value change to:{sender}");
+            currentLabel.SetText(sender.ToString("0"));
         }
     }
 }

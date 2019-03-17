@@ -23,7 +23,7 @@ namespace App1.WatchOS.WatchOSExtension
 
         [Action ("sliderAction:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void SliderAction (System.Single value);
+        partial void sliderAction (System.Single sender);
 
         void ReleaseDesignerOutlets ()
         {
