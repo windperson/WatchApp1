@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -7,6 +7,7 @@
         <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -17,12 +18,15 @@
                         <label width="103" height="40" alignment="center" text="Main Watch Interface" numberOfLines="2" id="45">
                             <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                         </label>
-                        <group width="1" alignment="left" id="102">
+                        <group width="1" alignment="left" id="102" verticalAlignment="center" radius="0.0">
                             <items>
-                                <label alignment="left" text="Current:" id="100"/>
-                                <label alignment="left" accessibilityHint="Current Slider Value" id="103">
+                                <label alignment="left" text="Current:" id="100">
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                                <label alignment="left" accessibilityHint="Current Slider Value" id="103" text="0">
                                     <accessibilityTraits key="accessibilityTraits" updatesFrequently="YES"/>
                                     <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </label>
                             </items>
                         </group>
@@ -32,11 +36,13 @@
                                     <connections>
                                         <action selector="sliderAction:" destination="AgC-eL-Hgc" id="153"/>
                                     </connections>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </slider>
                             </items>
                             <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <variation key="device=watch42" alignment="center" width="2"/>
                         </group>
+                        <button width="1" alignment="left" title="Press Btn" id="206" verticalAlignment="center"/>
                     </items>
                     <variation key="device=watch38">
                         <mask key="items">
@@ -63,7 +69,9 @@
                     <items>
                         <label alignment="left" text="This is Alert!" id="XkS-y5-khE"/>
                     </items>
-                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                    </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
