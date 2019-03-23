@@ -34,6 +34,11 @@ namespace App1.WatchOS.WatchOSExtension
             Console.WriteLine("{0} did deactivate", this);
         }
 
+        partial void btnClicked()
+        {
+            LogMessage("button clicked!");
+        }
+
         // ReSharper disable once InconsistentNaming
         // ReSharper disable once UnusedMember.Local
         partial void sliderAction(float sender)
