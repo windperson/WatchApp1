@@ -38,8 +38,17 @@ namespace App1.WatchOS.WatchOSExtension
         // ReSharper disable once UnusedMember.Local
         partial void sliderAction(float sender)
         {
-            Console.WriteLine($"slider value change to:{sender}");
+            var debugMsg = $"slider value change to:{sender}";
+            LogMessage(debugMsg);
             currentLabel.SetText(sender.ToString("0"));
+        }
+
+        private void LogMessage(string msg)
+        {
+#if DEBUG
+            Console.WriteLine(msg);
+#endif
+            NSLogHelper.OutputStringToConsole(msg);
         }
     }
 }
