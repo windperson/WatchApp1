@@ -34,6 +34,8 @@ namespace App1.WatchOS.WatchOSExtension
             Console.WriteLine("{0} did deactivate", this);
         }
 
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnusedMember.Local
         partial void btnClicked()
         {
             LogMessage("button clicked!");
@@ -50,10 +52,14 @@ namespace App1.WatchOS.WatchOSExtension
 
         private void LogMessage(string msg)
         {
-#if DEBUG
-            Console.WriteLine(msg);
-#endif
-            NSLogHelper.OutputStringToConsole(msg);
+            if (ObjCRuntime.Runtime.Arch == ObjCRuntime.Arch.DEVICE)
+            {
+                NSLogHelper.OutputStringToConsole(msg);
+            }
+            else
+            {
+                Console.WriteLine(msg);
+            }
         }
     }
 }
